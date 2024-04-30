@@ -59,18 +59,24 @@ const baseColors = [
 
 function createTiles(){
 
+    const myHeader = document.createElement('h1')
+    myHeader.innerText = 'Color Palette'
+    myHeader.style.color = 'white'
+    document.body.appendChild(myHeader)
+
     let mySection= document.createElement('section')
     document.body.appendChild(mySection)
 
     baseColors.forEach(color => {
 
-    console.log(color)
+        console.log(color)
     
         let myElement= document.createElement('div')
         myElement.style.backgroundColor = color
-        mySection.appendChild(myElement)
         myElement.innerText = (color)
         myElement.classList.add('color-tile')
+
+        mySection.appendChild(myElement)
 
     });
   }

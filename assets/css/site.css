@@ -1,12 +1,15 @@
 .color-tile{
     color: white;
-    width: 33.3333%;
     aspect-ratio: 1/1;
+    width: 29%;
+    margin: 1rem;
+}
+section > .color-tile:not(:hover){
+    filter: blur(1px);
+    opacity: 0.8;
 }
 
 section{
-    width: 50%;
-    background-color: red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
