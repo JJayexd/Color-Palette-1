@@ -1,0 +1,21 @@
+.color-tile{
+    color: white;
+    width: 33.3333%;
+    aspect-ratio: 1/1;
+}
+
+section{
+    width: 50%;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}

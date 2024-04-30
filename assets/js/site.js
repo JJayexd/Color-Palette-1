@@ -1,3 +1,46 @@
+// const baseColors = [ 
+//     '#9e0142',
+//     '#d53e4f',
+//     '#f46d43',
+//     '#fdae61',
+//     '#fee08b',
+//     '#abdda4',
+//     '#66c2a5',
+//     '#3288bd',
+//     '#5e4fa2'
+//   ];
+
+
+
+//     createTiles()
+
+// function createTiles() {
+
+//     const mySection = document.getElementById('main')
+    
+//     const myHeader = document.createElement('h1')
+//     myHeader.innerText = 'Color Palette'
+//     mySection.appendChild(myHeader)
+
+//     const myColor = document.createElement('section')
+//     myColor.id='colors'
+
+
+//     mySection.appendChild(myColor)
+
+//     baseColors.forEach(color => {
+
+//         const colorTile = document.createElement('div')
+//         colorTile.classList.add('color-tile')
+//         colorTile.style.backgroundColor = color
+//         colorTile.textContent = color
+//         myColor.appendChild(colorTile)
+      
+//     });
+
+
+// }
+
 const baseColors = [ 
     '#9e0142',
     '#d53e4f',
@@ -12,18 +55,22 @@ const baseColors = [
 
 
 
-
   createTiles()
 
-
-
-// denne funktion skal skabe dom elementer til styling så du kan få det resultat, din underviser hat vist dig.
 function createTiles(){
 
+    let mySection= document.createElement('section')
+    document.body.appendChild(mySection)
 
-//du kan bruge denne array funktion til at loope gennem din array for at skabe dom elementer til hver farve.
- baseColors.forEach(color => {
-      // color er farve koderne fra baseColors som tekst strenge
-      
-      });
+    baseColors.forEach(color => {
+
+    console.log(color)
+    
+        let myElement= document.createElement('div')
+        myElement.style.backgroundColor = color
+        mySection.appendChild(myElement)
+        myElement.innerText = (color)
+        myElement.classList.add('color-tile')
+
+    });
   }
